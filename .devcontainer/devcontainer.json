@@ -1,5 +1,13 @@
 {
+    "name" : "vscode-jupyter",
     "image": "ghcr.io/lescai-teaching/vscode-docker:latest",
+
+    "forwardPorts": [8888],
+	"portsAttributes": {
+		"8888": {
+			"label": "Jupyter"
+		}
+	},
   
     "customizations": {
       "vscode": {
